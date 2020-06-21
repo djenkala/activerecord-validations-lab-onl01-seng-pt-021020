@@ -13,5 +13,5 @@ class Post < ActiveRecord::Base
     ]
     
     def is_clickbait?
-      if CLICKBAIT_PATTERNS.none?
+      if CLICKBAIT_PATTERNS.none? { |pat| 
 end
