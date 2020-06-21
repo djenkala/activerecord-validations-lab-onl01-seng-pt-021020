@@ -13,4 +13,5 @@ class Post < ActiveRecord::Base
     ]
     
     def is_clickbait?
+      if CLICK
 end
